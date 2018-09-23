@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: Store Service Account
-          command: echo store cloud account.    
+          command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json    
