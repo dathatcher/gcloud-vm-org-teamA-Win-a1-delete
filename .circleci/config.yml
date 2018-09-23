@@ -3,9 +3,6 @@ jobs:
   build:
       docker:
       - image: google/cloud-sdk
-    filters:
-       branches:
-          only: master
     steps:
       - checkout
       - run:
