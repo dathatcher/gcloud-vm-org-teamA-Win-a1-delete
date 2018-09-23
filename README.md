@@ -1,14 +1,14 @@
-# gcloud_provision_LinuxVM version 4
+# gcloud_provision_IaaS_VM version 4
 
-# CircleCI Environment Variables:
+# CircleCI Environment Variables: <br>
 
-#Global:
-GCLOUD_SERVICE_KEY  - Service Account JSON file value, created in Google Cloud Project
-GOOGLE_COMPUTE_ZONE -  https://cloud.google.com/compute/docs/regions-zones/
-GOOGLE_PROJECT_ID   -  You Google Cloud project
-
-#Virtual Machine Values
-GOOGLE_VM_FAMILY  - https://cloud.google.com/compute/docs/images
+#Global:<br><br>
+<b>GCLOUD_SERVICE_KEY  - Service Account JSON file value, created in Google Cloud Project </b><br>
+GOOGLE_COMPUTE_ZONE -  https://cloud.google.com/compute/docs/regions-zones/<br>
+GOOGLE_PROJECT_ID   -  You Google Cloud project<br>
+<br>
+#<b>Virtual Machine Values <br>
+GOOGLE_VM_FAMILY  - https://cloud.google.com/compute/docs/images <br>
 GOOGLE_VM_IMAGE   - https://cloud.google.com/compute/docs/images
 GOOGLE_VM_LABELS  - Lables VM-TYPE, ORG
 GOOGLE_VM_NAME    - Name of your VM - Create a naming convention. 
