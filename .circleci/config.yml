@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  deploy:
+  build:
     docker:
       - image: google/cloud-sdk
     steps:
@@ -11,3 +11,10 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+   deploy:
+       docker:
+         - image: google/cloud-sdk
+       steps:
+         - run:
+             name: Store Service Account
+             command: echo deploy
