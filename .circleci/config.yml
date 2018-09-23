@@ -11,4 +11,5 @@ jobs:
       - run: |
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
+          gcloud compute instances create centos-7-v20180911 --image-family centos-7 --image-project centos-cloud
           gcloud compute instances list
