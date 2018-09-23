@@ -1,9 +1,13 @@
 version: 2
 jobs:
-    deploy:
+  build:
     docker:
       - image: google/cloud-sdk
     steps:
+      - checkout
       - run:
-          name: Store Service Account
-          command: echo done
+          name: Greeting
+          command: echo Hello, world.
+      - run:
+          name: Print the Current Time
+          command: date
