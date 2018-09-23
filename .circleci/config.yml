@@ -1,11 +1,11 @@
 version: 2
 jobs:
   build:
-  filters:
-    branches:
-       only: master
-    docker:
+      docker:
       - image: google/cloud-sdk
+    filters:
+       branches:
+          only: master
     steps:
       - checkout
       - run:
