@@ -11,4 +11,5 @@ jobs:
       - run: |
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
-          gcloud auth list
+          gcloud compute instances list \
+              --format='table[box,title=Instances](name:sort=1,zone:title=zone,status)'
