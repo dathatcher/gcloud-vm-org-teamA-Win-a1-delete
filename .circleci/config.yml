@@ -6,4 +6,4 @@ jobs:
     steps:
       - run:
           name: Store Service Account
-          command: echo "done"
+          command: echo done
